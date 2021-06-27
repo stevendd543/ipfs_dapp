@@ -1,0 +1,34 @@
+.Dapp {
+  text-align: center;
+  height: 600px;
+  background-color: rgb(224, 238, 233);
+}
+.history {
+  height: 70%;
+  width: 35%;
+  overflow: auto;
+  margin: 10px auto;
+  /* position: absolute;
+  top: 50px;
+  right: 50px; */
+  border-style: solid;
+  display: flex;
+  /* justify-content: center; */
+
+  background-color: rgb(217, 238, 231);
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px; */
+}
+.ipfs {
+  text-align: center;
+}
+.addr_button {
+  background-color: rgb(224, 238, 233);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.addr_button:hover {
+  background-color: rgb(161, 159, 159);
+  color: black;
+  border: 1px solid #555555;
+}

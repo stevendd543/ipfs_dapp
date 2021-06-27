@@ -2,8 +2,11 @@ import './App.css';
 import { useState } from 'react';
 import { ContractFactory,ethers } from 'ethers';
 import Greeter from './Greeter.json';
+
 // Update with the contract address logged out to the CLI when it was deployed 
 var greeterAddress = ""
+var IPFS = require('ipfs-http-client');
+// var ipfs = IPFS({ host: 'localhost', port: '5001', protocol: 'http' });
 // const hre = require("hardhat");
 
 
@@ -57,6 +60,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      
+
+        <input type="file"/>
         <button onClick={fetchGreeting}>Fetch Greeting</button>
         <button onClick={setGreeting}>Set Greeting</button>
         <button onClick={createContract}>create</button>
@@ -66,4 +72,4 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
